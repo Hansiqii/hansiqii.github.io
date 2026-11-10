@@ -67,6 +67,47 @@
       text-underline-offset: 0.15em;
       overflow-wrap: anywhere;
     }
+
+    .education {
+      margin-top: 1.75rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #dce5ed;
+    }
+
+    .education h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .education p {
+      margin: 0.2rem 0 0;
+    }
+
+    .education-list {
+      display: grid;
+      gap: 1rem;
+      margin: 0.85rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .study-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.15rem 1rem;
+    }
+
+    .study-header h3 {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    .study-dates {
+      color: #475a6b;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -83,6 +124,27 @@
         <dt>GitHub</dt>
         <dd><a href="https://github.com/Hansiqii">@Hansiqii</a></dd>
       </dl>
+      <section class="education" aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <p>University of Science and Technology of China, Hefei</p>
+        <ul class="education-list">
+          <li>
+            <div class="study-header">
+              <h3>Master’s Studies</h3>
+              <span class="study-dates"><time datetime="2026-09">Sep 2026</time> – <time datetime="2029-06">Jun 2029</time> (expected)</span>
+            </div>
+            <p>School of Mathematical Sciences · Focus on Computing</p>
+          </li>
+          <li>
+            <div class="study-header">
+              <h3>Undergraduate Studies</h3>
+              <span class="study-dates"><time datetime="2022-09">Sep 2022</time> – <time datetime="2026-06">Jun 2026</time></span>
+            </div>
+            <p>Major in Information and Computing Science</p>
+            <p>Minor in Computer Science and Technology</p>
+          </li>
+        </ul>
+      </section>
     </article>
   </main>
 </body>
